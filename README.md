@@ -7,7 +7,9 @@ A PyTorch implementation of our WACV 2022 paper, "Self-Supervised Learning of Do
 
 > **Self-Supervised Learning of Domain Invariant Features for Depth Estimation**<br>
 Hiroyasu Akada, Shariq Farooq Bhat, Ibraheem Alhashim, Peter Wonka<br>
+
 > Paper: https://openaccess.thecvf.com/content/WACV2022/html/Akada_Self-Supervised_Learning_of_Domain_Invariant_Features_for_Depth_Estimation_WACV_2022_paper.html<br><br>
+
 > Citation: 
 
     @InProceedings{Akada_2022_WACV,
