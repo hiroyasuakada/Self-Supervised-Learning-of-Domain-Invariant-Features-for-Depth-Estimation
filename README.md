@@ -58,7 +58,9 @@ The trained weights will be available soon.
 
 
 # Evaluation
-Please look at evaluate.py
+Please look at evaluate.py.
+
+You need to specify the foloder that contains predicted images in '--predicted_depth_path'.
 
         
 
