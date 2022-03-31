@@ -47,6 +47,20 @@ For dataset preparation, please look at previous works, [Monodepth](https://gith
 
 The trained weights will be available soon.
 
+# Testing (generate images)
+## KITTI
+
+        bash scripts/vkitti2kitti/test/test_kitti.sh
+
+## Make3D
+
+        bash scripts/vkitti2kitti/test/test_make3d.sh
+
+
+# Evaluation
+Please look at evaluate.py
+
+        
 
 
 
