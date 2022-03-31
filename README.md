@@ -16,8 +16,7 @@ Hiroyasu Akada, Shariq Farooq Bhat, Ibraheem Alhashim, Peter Wonka<br>
     booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
     month     = {January},
     year      = {2022},
-    pages     = {3377-3387}
-}
+    pages     = {3377-3387}}
 
 # Requirements 
 
