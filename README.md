@@ -1,1 +1,1 @@
-# Self-Supervised-Learning-of-Domain-Invariant-Features-for-Depth-Estimation
+# Self-Supervised Learning of Domain Invariant Features for Depth Estimation (WACV2022)

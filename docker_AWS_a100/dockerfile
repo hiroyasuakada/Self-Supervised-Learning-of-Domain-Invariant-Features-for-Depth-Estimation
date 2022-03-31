@@ -1,0 +1,101 @@
+##############################################################################
+#                                 Main image                                ##
+##############################################################################
+
+FROM nvidia/cuda:11.1.1-runtime-ubuntu18.04
+LABEL maintainer "NVIDIA CORPORATION <cudatools@nvidia.com>"
+
+ENV CUDNN_VERSION 8.0.5.39
+
+LABEL com.nvidia.cudnn.version=8.0.5.39
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libcudnn8=$CUDNN_VERSION-1+cuda11.1 \
+    && apt-mark hold libcudnn8 && \
+    rm -rf /var/lib/apt/lists/*
+
+
+##############################################################################
+##                                 Python3.7                                ##
+##############################################################################
+
+RUN apt update
+RUN echo y | apt install python3
+
+RUN apt update
+RUN echo y | apt-get install software-properties-common
+RUN add-apt-repository ppa:deadsnakes/ppa
+
+RUN apt update
+RUN echo y | apt-get install python3.7
+RUN apt update
+RUN echo y | apt install python3-pip
+RUN python3.7 -m pip install --upgrade pip setuptools
+
+RUN apt update
+RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
+RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.7 1
+
+##############################################################################
+##                                libraries                                 ##
+##############################################################################
+
+RUN apt update
+RUN echo y | apt install git
+
+RUN pip3 install scipy
+RUN pip3 install requests
+RUN pip3 install Pillow
+RUN pip3 install numpy
+RUN pip3 install tensorboard
+RUN pip3 install cython
+RUN pip3 install moviepy
+RUN pip3 install opencv-python
+RUN pip3 install ninja
+RUN pip3 install tensorboardX
+RUN pip3 install natsort
+# RUN pip3 install wandb
+
+RUN pip3 install dominate>=2.3.1
+RUN pip3 install visdom>=0.1.8.3
+
+RUN pip3 install matplotlib
+RUN pip3 install scikit-learn
+RUN pip3 install scikit-image
+
+RUN pip3 install cupy-cuda112
+
+# RUN pip3 install tensorflow-gpu==1.15.0
+RUN pip3 install torch==1.8.1+cu111 torchvision==0.9.1+cu111 torchaudio==0.8.1 -f https://download.pytorch.org/whl/torch_stable.html
+RUN pip3 install efficientnet_pytorch
+RUN pip3 install wandb
+
+##############################################################################
+##                            opencv2 error                                 ##
+##############################################################################
+RUN apt update
+RUN echo y | apt install libgl1-mesa-glx
+RUN echo y | apt install libglib2.0-0
+
+
+##############################################################################
+##                               CUDA error                                 ##
+##############################################################################
+ENV export PATH=/usr/local/cuda-11.1/bin:$PATH
+ENV export LD_LIBRARY_PATH=/usr/local/cuda-11.1/lib:$LD_LIBRARY_PATH
+ENV export LD_LIBRARY_PATH=/usr/local/cuda-11.1/lib64:$LD_LIBRARY_PATH
+ENV export LD_LIBRARY_PATH="/usr/local/cuda/lib64:/usr/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH"
+ENV export CUDA_PATH=/usr/local/cuda-11.1
+ENV export CUDA_ROOT=/usr/local/cuda-11.1
+ENV export CUDA_HOME=/usr/local/cuda-11.1
+ENV export CUDA_HOST_COMPILER=/usr/bin/gcc-7.5
+
+# ##############################################################################
+# ##                                OpenEXR                                   ##
+# ##############################################################################
+
+# RUN apt update
+# RUN echo y | apt install libopenexr-dev
+# RUN echo y | apt install openexr
+# RUN echo y | apt install zlib1g-dev
+# RUN pip3 install OpenEXR
