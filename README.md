@@ -36,6 +36,16 @@ The outdooe Synthetic Dataset is vKITTI and outdoor Realistic dataset is KITTI. 
 
 For dataset preparation, please look at previous works, [Monodepth](https://github.com/mrharicot/monodepth) and [T2Net](https://github.com/lyndonzheng/Synthetic2Realistic).  
 
+In this repository, please place the datasets like below.
+
+| Folder relation ;
+| :--- 
+| Self-Supervised-Learning-of-Domain-Invariant-Features-for-Depth-Estimation-WACV2022
+| &boxur;&nbsp; datasets
+| &ensp;&ensp; &boxur;&nbsp; kitti_data
+| &ensp;&ensp; &boxur;&nbsp; vkitti_data
+| &ensp;&ensp; &boxur;&nbsp; make3d
+
 
 # Training
 ## Style transfer stage
