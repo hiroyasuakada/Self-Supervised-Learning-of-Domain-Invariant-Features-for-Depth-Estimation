@@ -34,7 +34,7 @@ Hiroyasu Akada, Shariq Farooq Bhat, Ibraheem Alhashim, Peter Wonka<br>
 # Datasets
 The outdooe Synthetic Dataset is vKITTI and outdoor Realistic dataset is KITTI. We use KITTI and Make3D datasets for evaluation. 
 
-For dataset pre-processing, we follow the same way as previous works. Therefopre, please follow the instructions by [Monodepth](https://github.com/mrharicot/monodepth) and [T2Net](https://github.com/lyndonzheng/Synthetic2Realistic).  
+For dataset pre-processing, we follow the same way as previous works. Therefore, please follow the instructions by [Monodepth](https://github.com/mrharicot/monodepth) and [T2Net](https://github.com/lyndonzheng/Synthetic2Realistic).  
 
 After the dataset pre-processing, please place the datasets in this repository like below.
 
