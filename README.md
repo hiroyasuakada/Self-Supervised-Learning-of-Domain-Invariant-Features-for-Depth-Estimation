@@ -81,7 +81,10 @@ Please look at evaluate.py.
 
 You need to specify the foloder that contains predicted images in '--predicted_depth_path'.
 
-        
+
+
+# Acknowledgments
+Code is inspired by [T2Net (Synthetic2Realistic)](https://github.com/lyndonzheng/Synthetic2Realistic.git).
 
 
 
