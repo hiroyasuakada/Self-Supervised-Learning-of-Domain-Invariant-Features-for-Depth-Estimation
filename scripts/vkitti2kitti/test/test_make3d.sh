@@ -2,7 +2,7 @@ set -ex
 python test.py \
     --model test \
     --img_source_dir ../datasets/vkitti_data/train_color \
-    --img_target_dir ../datasets/Test134_cropped \
+    --img_target_dir ../datasets/make3d \
     --lab_source_dir ../datasets/vkitti_data/train_depth \
     --lab_target_dir ./datasplit/eigen_test_files.txt \
     --txt_data_path ../datasets/kitti_data/ \
