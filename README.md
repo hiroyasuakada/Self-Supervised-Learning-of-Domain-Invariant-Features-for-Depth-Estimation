@@ -14,7 +14,7 @@ Hiroyasu Akada, Shariq Farooq Bhat, Ibraheem Alhashim, Peter Wonka<br>
 
 - Linux environment
 - 8 NVIDIA A100 GPUs
-- Docker [provided Dockerfile](https://github.com/hiroyasuakada/Self-Supervised-Learning-of-Domain-Invariant-Features-for-Depth-Estimation-WACV2022/blob/main/docker_AWS_a100/dockerfile)
+- Docker: [provided Dockerfile](https://github.com/hiroyasuakada/Self-Supervised-Learning-of-Domain-Invariant-Features-for-Depth-Estimation-WACV2022/blob/main/docker_AWS_a100/dockerfile)
 - Download this repository
 
         git clone https://github.com/hiroyasuakada/Self-Supervised-Learning-of-Domain-Invariant-Features-for-Depth-Estimation-WACV2022.git
