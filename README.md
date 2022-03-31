@@ -39,7 +39,7 @@ For dataset preparation, please look at previous works, [Monodepth](https://gith
         bash scripts/vkitti2kitti/cl_dec/train_cl-dec.sh
 
 
-##  fine-tuning stage 
+##  Fine-tuning stage 
 
         bash scripts/vkitti2kitti/full_fine/train_full_fine.sh
  
