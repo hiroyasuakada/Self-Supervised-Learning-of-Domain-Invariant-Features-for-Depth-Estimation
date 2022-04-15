@@ -29,7 +29,7 @@ class TestModel(BaseModel):
         # define the task network
         self.netTask = network.define_Task(opt.image_nc, opt.label_nc, opt.ngf, opt.task_layers, opt.norm,
                                              opt.activation, opt.task_model_type, opt.init_type, opt.drop_rate,
-                                             False, opt.gpu_ids, opt.U_weight, opt.pre_trained_on_ImageNet)
+                                             False, opt.gpu_ids, opt.U_weight, opt.pre_trained_on_ImageNet, opt)
 
         self.load_networks(opt.which_epoch)
 
