@@ -1,6 +1,6 @@
 # Self-Supervised Learning of Domain Invariant Features for Depth Estimation (WACV2022)
 
-Official pyTorch implementation of our WACV 2022 paper, "Self-Supervised Learning of Domain Invariant Features for Depth Estimation".
+Official PyTorch implementation of our WACV 2022 paper, "Self-Supervised Learning of Domain Invariant Features for Depth Estimation".
 
 **For any questions, please contact the first author, Hiroyasu Akada [hakada@mpi-inf.mpg.de] .**
 
