@@ -64,7 +64,7 @@ After the dataset pre-processing, please place the datasets in this repository l
  
 ## Trained weights
 
-You can download the [trained weight](https://drive.google.com/file/d/19ijzM1-b_tcnooqdnMt_zumqvMP_eHOe/view?usp=sharing) of our task network. Please place the weight in `./checkpoints/vkitti2kitti_full-fine/`.
+You can download the [trained weight](https://drive.google.com/file/d/1iB1KuwpysEND2r1iqcpppz7aTBbX_F5E/view?usp=sharing) of our task network. Please place the weight in `./checkpoints/vkitti2kitti_full-fine/`.
 
 # Testing (generate images)
 ## KITTI
